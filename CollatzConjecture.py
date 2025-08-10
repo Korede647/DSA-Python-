@@ -7,7 +7,7 @@ def collatz_steps(n):
         if n % 2 == 0:
             n = int(n / 2)  # Divide by 2 if n is even and convert to int
         else:
-            n = 3 * n + 1
+            n = 3 * n + 1    
         steps += 1
     return steps
 

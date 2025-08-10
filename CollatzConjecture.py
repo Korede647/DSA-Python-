@@ -5,13 +5,14 @@ def collatz_steps(n):
     steps = 0
     while n != 1:
         if n % 2 == 0:
-            n //= 2
+            n = int(n / 2)  # Divide by 2 if n is even and convert to int
         else:
             n = 3 * n + 1
         steps += 1
     return steps
 
 
+
 # Example usage:
-print(collatz_steps(6))  # Output: 8 (6 -> 3 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1)
-print(collatz_steps(19)) # Output: 20 (19 -> 58 -> 29 -> 88 -> 44 -> 22 -> 11 -> 34 -> 17 -> 52 -> 26 -> 13 -> 40 -> 20 -> 10 -> 5 -> 16 -> 8 -> 4 -> 2 -> 1)
+print(collatz_steps(6))  # Output: 8 
+print(collatz_steps(19)) # Output: 20 

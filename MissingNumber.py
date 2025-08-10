@@ -2,7 +2,8 @@
 
 
 def find_missing_number(numbers, n):
-    total = n * (n + 1) // 2  # Sum of first n natural numbers
+    total = (n * (n + 1)) / 2   # Sum of first n natural numbers
+    total = int(total)
     current_sum = sum(numbers)  # Sum of the given numbers
     return total - current_sum  # The missing number
 

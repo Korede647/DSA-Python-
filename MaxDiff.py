@@ -18,5 +18,5 @@ def max_diff(numbers):
 
 
 # Example usage:
-print(max_diff([3, 1, 4, 1, 5, 9, 2, 6, 5]))  # Output: 8 (9 - 1)
-print(max_diff([10, 20, 30, 40]))              # Output: 30 (40 - 10)
+print(max_diff([3, 1, 4, 1, 5, 9, 2, 6, 5]))  # Output: 8 
+print(max_diff([10, 20, 30, 40]))              # Output: 30 

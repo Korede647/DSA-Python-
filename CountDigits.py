@@ -10,7 +10,7 @@ def count_digits(n):
     n = abs(n)
 
     while n > 0:
-        n //= 10
+        n = int(n / 10)
         count += 1
 
     return count if not is_negative else count + 1  # Include sign for negative numbers

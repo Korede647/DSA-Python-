@@ -5,9 +5,11 @@ def second_largest(numbers):
     if len(numbers) < 2:
         return None  # Not enough elements to find the second largest
 
-    first = second = float('-inf')
-    
-    for num in numbers:
+    first, second = numbers[0], numbers[1]
+    if second > first:
+        first, second = second, first
+
+    for num in numbers[2:]:
         if num > first:
             second = first
             first = num
@@ -15,6 +17,7 @@ def second_largest(numbers):
             second = num
             
     return second
+
 
 
 # Example usage:
